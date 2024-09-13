@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Leo Dahlen</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
+
 <h1>Welcome to Leo Dahlen's Website</h1>
 <br>
 <img src= " {{ url_for('static' , filename= 'assets/tyler.jpg') }}" alt="Tyler in his baseball uniform" width="300">
-</body>
-</html>
+
+{% endblock %}
